@@ -11,6 +11,8 @@ import (
 	"time"
 )
 
+var INVITEUSERTOGROUP = "/invite_user_to_group"
+
 func InviteListToGroup(userIDList []string, groupID string) {
 	var inviteReq server_api_params.InviteUserToGroupReq
 	inviteReq.OperationID = utils.OperationIDGenerator()

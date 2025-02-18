@@ -16,10 +16,10 @@ var (
 	//TESTIP              = "121.37.25.71"
 	//APIADDR = "http://43.155.69.205" + ":10002"
 	//WSADDR              = "wss://" + TESTIP + ":10001"
-	TESTIP  = "open-im-test.rentsoft.cn"
-	APIADDR = "https://" + TESTIP + ":50002"
+	TESTIP  = "localhost"
+	APIADDR = "https://" + TESTIP + ":10002"
 
-	WSADDR              = "wss://" + TESTIP + ":50001"
+	WSADDR              = "wss://" + TESTIP + ":10001"
 	REGISTERADDR        = APIADDR + "/auth/user_register"
 	TOKENADDR           = APIADDR + "/auth/user_token"
 	SECRET              = "tuoyun"
@@ -40,14 +40,14 @@ var userLock sync.RWMutex
 var allUserID []string
 var allToken []string
 
-//var allWs []*interaction.Ws
+// var allWs []*interaction.Ws
 var sendSuccessCount, sendFailedCount int
 var sendSuccessLock sync.RWMutex
 var sendFailedLock sync.RWMutex
 
 var msgNumInOneClient = 0
 
-//var Msgwg sync.WaitGroup
+// var Msgwg sync.WaitGroup
 var sendMsgClient = 0
 
 var MaxNumGoroutine = 100000

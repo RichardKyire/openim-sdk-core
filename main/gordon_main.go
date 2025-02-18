@@ -11,14 +11,14 @@ import (
 )
 
 var (
-	APIADDR = "http://43.155.69.205:10002"
-	WSADDR  = "ws://43.155.69.205:10001"
+	APIADDR = "http://localhost:10002"
+	WSADDR  = "ws://localhost:10001"
 	//APIADDR      = "https://chat-api-dev.opencord.so"
 	//WSADDR       = "wss://chat-ws-dev.opencord.so"
 	REGISTERADDR = APIADDR + "/user_register"
 	ACCOUNTCHECK = APIADDR + "/manager/account_check"
 	TOKENADDR    = APIADDR + "/auth/user_token"
-	SECRET       = "tuoyun"
+	SECRET       = "wuzhenting"
 	SENDINTERVAL = 20
 )
 

@@ -28,13 +28,13 @@ import (
 //}
 
 var (
-	TESTIP       = "43.128.5.63"
+	TESTIP       = "localhost"
 	APIADDR      = "http://" + TESTIP + ":10002"
 	WSADDR       = "ws://" + TESTIP + ":10001"
 	REGISTERADDR = APIADDR + "/user_register"
 	ACCOUNTCHECK = APIADDR + "/manager/account_check"
 	TOKENADDR    = APIADDR + "/auth/user_token"
-	SECRET       = "tuoyun"
+	SECRET       = "wuzhenting"
 	SENDINTERVAL = 20
 )
 
